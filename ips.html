@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IPS Gallery Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       background-color: bisque;
@@ -18,15 +19,20 @@
 
     header {
       background-color: palevioletred;
-      padding: 10px 0;
+      padding: 14px 0;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header a {
       color: wheat;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 18px;
       font-size: 18px;
+      font-weight: bold;
       transition: color 0.3s ease;
     }
 
@@ -37,16 +43,16 @@
     h1 {
       text-align: center;
       margin-top: 50px;
-      font-size: 36px;
+      font-size: 38px;
       color: darksalmon;
     }
 
     .center-img {
       display: block;
-      margin: 0 auto;
-      max-width: 300px;
+      margin: 30px auto;
+      width: 200px;
+      height: auto;
     }
-
     .homeimg {
       display: block;
       margin: 30px auto;
@@ -62,11 +68,54 @@
       transform: scale(1.02);
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 40px 20px;
+    }
+
+    .gallery img {
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
 
     h2 {
       text-align: center;
-      margin: 40px 60px 60px;
+      margin: 40px 60px 80px;
+      font-size: 24px;
       color: purple;
+    }
+
+    @media (max-width: 768px) {
+      header a {
+        display: inline-block;
+        margin: 10px 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+        margin-top: 40px;
+      }
+
+      .homeimg {
+        width: 90%;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 30px 30px 60px;
+      }
     }
   </style>
 </head>
@@ -87,8 +136,8 @@
     <img src="Screenshot_2025-04-06_180217-removebg-preview.png" alt="Centered Logo" class="center-img" />
   </div>
 
-  <img src="3c350082-558a-48ca-802c-78ba12411140.jpeg" alt="IPS Image 1" class="homeimg" />
-  <img src="Tugas ips.png" alt="IPS Image 2" class="homeimg" />
+  <img src="3c350082-558a-48ca-802c-78ba12411140.jpeg" alt="Foto Aktivitas IPS" class="homeimg" />
+  <img src="Tugas ips.png" alt="Tugas Booklet IPS" class="homeimg" />
 
   <h2>Tugas Booklet IPS</h2>
 </body>
