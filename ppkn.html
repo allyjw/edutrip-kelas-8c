@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PPKn Gallery Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 
-    <style>
-        body{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin: 0;
-            padding:0;
-            background-color:cornsilk;
-        }
-    
-        header {
-            background-color:palevioletred;
-            padding: 10px 0;
-            text-align: center;
-        }
-    
-        header a {
-            color: wheat;
-            text-decoration: pink;
-            margin: 0 15px;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-    
-        header a:hover {
-            color:rgb(103, 66, 18);
-        }
-    
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 36px;
-            color:darksalmon;
-        }
-        .center-img {
-  display: block;
-  margin: 0 auto;
-}
-        .homeimg{
-    display:block;
-    margin-left: auto;
-    margin-right:auto;    
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-        h2 {
-            text-align: center;
-            margin-left: 60px;
-            margin-right:60px;
-            margin-top:40px;
-            color:purple;
-        }
-    </style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: cornsilk;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: palevioletred;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header a {
+      color: wheat;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: rgb(103, 66, 18);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 40px;
+      color: darksalmon;
+    }
+
+    .center-img {
+      display: block;
+      margin: 30px auto;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 40px 20px;
+    }
+
+    .gallery img {
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 20px 60px;
+      color: purple;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
-        <a href="ppkn.html">PPkn</a>
-        <a href="bahasainggris.html">Bahasa Inggris</a>
-        <a href="mandarin.html">Mandarin</a>
-        <a href="ips.html">IPS</a>
-    </header>
-    
-    <h1>PPKN Gallery Page</h1>
-    <div class="image-container">
-        <img src="Screenshot_2025-04-06_180217-removebg-preview.png" alt="Centered Image" class="center-img">
-    </div>
-    <img src="0141f88d-f61e-4030-b40a-e3df53bb0572.jpeg" width="800" length="600" class="homeimg">
-    <img src="d116ce98-6a2e-40d6-9556-00998968bf88.jpeg" width="800" length="600" class="homeimg">
-    <h2>Peran National Palace Museum dan Chiang Kai Shek</h2>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="ppkn.html">PPKn</a>
+    <a href="bahasainggris.html">Bahasa Inggris</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ips.html">IPS</a>
+  </header>
+
+  <h1>PPKn Gallery Page</h1>
+  <img src="Screenshot_2025-04-06_180217-removebg-preview.png" alt="Centered Logo Image" class="center-img" />
+
+  <div class="gallery">
+    <img src="0141f88d-f61e-4030-b40a-e3df53bb0572.jpeg" alt="National Palace Museum" />
+    <img src="d116ce98-6a2e-40d6-9556-00998968bf88.jpeg" alt="Chiang Kai Shek" />
+  </div>
+
+  <h2>Peran National Palace Museum dan Chiang Kai Shek</h2>
 </body>
 </html>

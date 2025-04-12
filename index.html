@@ -1,111 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taiwan Edutrip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 
-    <style>
-        body{
-            font-family: 'Franklin Gothic Medium', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding:0;
-            background-color:aliceblue;
-        }
-
-        header {
-            background-color:palevioletred;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header a {
-            color: wheat;
-            text-decoration: pink;
-            margin: 0 15px;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-
-        header a:hover {
-            color:rgb(103, 66, 18);
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 30px;
-            color:darksalmon;
-        }
-        .center-img {
-  display: block;
-  margin: 0 auto;
-}
-        h2 {
-            text-align: center;
-            margin-left: 60px;
-            margin-right:60px;
-            margin-top:40px;
-            color:purple;
-        }
-        h4 {
-            text-align:center;
-            margin-left:60px;
-            margin-right:60px;
-            margin-top:10px;
-            color:midnightblue;
-        }
-        .homeimg{
-    margin-left: 40px;
-    margin-right:30px;    
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-        h3 {
-            text-align:justify;
-            margin-left: 50px;
-            margin-right:50px;
-            margin-top: 40px;
-            color:maroon;
-        }
-    </style>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7faff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ec6a8d;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header a {
+      color: #fff7e6;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 17px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #331100;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 40px;
+      color: #ec6a8d;
+    }
+
+    .center-img {
+      display: block;
+      margin: 30px auto;
+      max-width: 300px;
+      height: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 10px 0;
+      color: #6c3483;
+      font-weight: 600;
+    }
+
+    h4 {
+      text-align: center;
+      margin-top: 8px;
+      color: #2c3e50;
+      font-weight: 400;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 20px;
+      gap: 20px;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .description {
+      max-width: 900px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+
+    .description p {
+      text-align: justify;
+      font-size: 16px;
+      color: #5a2a2a;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
-        <a href="ppkn.html">PPkn</a>
-        <a href="bahasainggris.html">Bahasa Inggris</a>
-        <a href="mandarin.html">Mandarin</a>
-        <a href="ips.html">IPS</a>
-    </header>
 
-    <h1>Home Page</h1>
-    <div class="image-container">
-        <img src="Screenshot_2025-04-06_180217-removebg-preview.png" alt="Centered Image" class="center-img">
-    </div>
-    <h2>Taiwan Edutrip Page Display 2025</h2>
-    <h4>Alicia Jillian Winata 8C/1</h4>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    <a href="ppkn.html">PPKn</a>
+    <a href="bahasainggris.html">Bahasa Inggris</a>
+    <a href="mandarin.html">Mandarin</a>
+    <a href="ips.html">IPS</a>
+  </header>
 
-    <div class="gallery">
-    <img src="d2c54989-1a78-4ce3-ba80-af5032bf692e.jpeg" width="300" height="200" class="homeimg" alt="Photo 1">
-    <img src="d9058426-c3e4-4ee6-abfe-eac292495fa9.jpeg" width="300" height="200" class="homeimg" alt="Photo 2">
-    <img src="2854c9fc-4c56-471f-8e89-e38afa05b922.jpeg" width="200" height="250" class="homeimg" alt="Photo 3">
-    <img src="320e6d85-82ec-4acc-a23b-2c75a806005a.jpeg" width="300" height="200" class="homeimg" alt="Photo 4">
-    <img src="d128ae6c-3dfe-484f-a04d-21200150c645.jpeg" width="200" height="250" class="homeimg" alt="Photo 5">
-    <img src="a56b8e08-703a-409a-b849-5c4e973affaf.jpeg" width="200" height="250" class="homeimg" alt="Photo 6">
-    <img src="a15afec5-b075-4ddb-a752-28b370ec0afa.jpeg" width="200" height="250" class="homeimg" alt="Photo 7"> 
-    <img src="043d1f09-78b9-4dae-b693-7ef3a2b8bd58.jpeg" width="200" height="250" class="homeimg" alt="Photo 8">
-    <img src="a5d5f4d7-2fff-484c-ac21-fa4896955d5d.jpeg" width="200" height="250" class="homeimg" alt="Photo 9">
-    </div>
+  <h1>Home Page</h1>
+  <img src="Screenshot_2025-04-06_180217-removebg-preview.png" alt="Centered Image" class="center-img" />
 
-    <h3><p>Proyek ini merupakan kumpulan-kumpulan dan penampilan pekerjaan-pekerjaan dari pelajaran lain yang ditampilkan 
-        dalam beberapa pelajaran yang tertulis di atas. Pekerjaan-pekerjaan yang ditampilkan merupakan hasil olah dari 
-        pergian edutrip kami. Untuk Taiwan, dibagikan menjadi tiga kota dan kota-kota tersebut adalah Kaoshiung, Keelung dan Hualien. 
-        Dalam rangka edutrip ini, saya memilih untuk pergi ke kota Hualien. Pada saat di kota Hualien, maupun Taipei dan kota-kota lain yang 
-        saya kunjungi, saya belajar banyak hal seperti menjadi mandiri tanpa orang tua, belajar memakai uang yang diberikan dengan bijak, 
-        belajar beradaptasi di lingkugan dan dengan teman-teman baru, belajar mengatasi kesusahan yang dialami dalam budaya dan negara 
-        yang berbeda, belajar "packing" sendiri, dan juga mencoba hal-hal baru saat pergi ke negara baru. Edutrip ini menjadi manfaat
-        untuk hidupku sekarang dan masa depanku untuk kemandirian yang lebih baik.</p></h3>
+  <h2>Taiwan Edutrip Page Display 2025</h2>
+  <h4>Alicia Jillian Winata 8C/1</h4>
+
+  <div class="gallery">
+    <img src="d2c54989-1a78-4ce3-ba80-af5032bf692e.jpeg" width="300" height="200" alt="Photo 1" />
+    <img src="d9058426-c3e4-4ee6-abfe-eac292495fa9.jpeg" width="300" height="200" alt="Photo 2" />
+    <img src="2854c9fc-4c56-471f-8e89-e38afa05b922.jpeg" width="200" height="250" alt="Photo 3" />
+    <img src="320e6d85-82ec-4acc-a23b-2c75a806005a.jpeg" width="300" height="200" alt="Photo 4" />
+    <img src="d128ae6c-3dfe-484f-a04d-21200150c645.jpeg" width="200" height="250" alt="Photo 5" />
+    <img src="a56b8e08-703a-409a-b849-5c4e973affaf.jpeg" width="200" height="250" alt="Photo 6" />
+    <img src="a15afec5-b075-4ddb-a752-28b370ec0afa.jpeg" width="200" height="250" alt="Photo 7" />
+    <img src="043d1f09-78b9-4dae-b693-7ef3a2b8bd58.jpeg" width="200" height="250" alt="Photo 8" />
+    <img src="a5d5f4d7-2fff-484c-ac21-fa4896955d5d.jpeg" width="200" height="250" alt="Photo 9" />
+  </div>
+
+  <div class="description">
+    <p>
+      Proyek ini merupakan kumpulan dan penampilan pekerjaan dari beberapa mata pelajaran berdasarkan pengalaman edutrip kami. 
+      Perjalanan ini dibagi ke tiga kota di Taiwan: Kaohsiung, Keelung, dan Hualien. Saya memilih kota Hualien sebagai tempat kunjungan utama. 
+      Dari kunjungan ini, saya belajar banyak: menjadi mandiri tanpa orang tua, menggunakan uang secara bijak, beradaptasi dengan lingkungan dan teman baru, 
+      mengatasi tantangan budaya, dan melakukan "packing" sendiri. Selain itu, saya juga mencoba banyak hal baru yang belum pernah saya alami sebelumnya. 
+      Edutrip ini sangat bermanfaat untuk masa depan saya, khususnya dalam hal kemandirian dan pengembangan diri.
+    </p>
+  </div>
+
 </body>
 </html>
